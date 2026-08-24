@@ -1,0 +1,24 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.neko.fix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "JustARodJRSyncScreenMixin",
+    "JustARodFrictionScreenMixin",
+    "JustARodMateScreenMixin",
+    "ClientPoseSleepGuardMixin",
+    "VanillaBlurBlockScreenMixin",
+    "VanillaBlurBlockGameRendererMixin",
+    "VanillaBlurRadiusMixin"
+  ],
+  "mixins": [
+    "NekoSleepInBedGoalMixin",
+    "SleepingPoseStabilizerMixin",
+    "SleepingStateStabilizerMixin",
+    "SleepingPoseFinalMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

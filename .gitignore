@@ -1,0 +1,14 @@
+# Gradle / IDE
+.gradle/
+build/classes*/
+build/tmp/
+*.iml
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# 保留 build/libs 下的成品 jar（不忽略）
+!build/libs/
