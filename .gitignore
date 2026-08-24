@@ -10,5 +10,8 @@ build/tmp/
 Thumbs.db
 Desktop.ini
 
+# 本地 SSH 密钥（不要提交）
+.ssh/
+
 # 保留 build/libs 下的成品 jar（不忽略）
 !build/libs/
