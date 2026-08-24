@@ -111,4 +111,7 @@ src/main/resources/
 
 ## License
 
-MIT
+- 本仓库代码/文档：**MIT License**（见 `LICENSE`）
+- 本仓库**不包含** JustARod / toNeko 的源码或资源，仅通过 Mixin 挂钩其运行时类进行修复。
+- 被修复的原项目许可：JustARod 为 **GPL-3.0**，toNeko 为 **GPL-v3**。
+  如果你的使用场景要求严格兼容 GPL，请自行评估是否将本项目整体改为 GPL-3.0。
