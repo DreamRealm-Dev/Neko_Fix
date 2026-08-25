@@ -5,11 +5,12 @@ issueTrackerURL = "https://example.invalid/neko_fix"
 
 [[mods]]
 modId = "neko_fix"
-version = "1.0.8"
+version = "1.0.12"
 displayName = "Neko Fix"
 authors = "Neko_Fix"
 description = '''
-Fixes JustARod screen background blur and toNeko sleeping flicker.
+Fixes JustARod screen background blur, first-person legs with Better Combat,
+and toNeko sleeping flicker.
 '''
 
 [[dependencies.neko_fix]]
@@ -39,6 +40,13 @@ type = "optional"
 versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies.neko_fix]]
+modId = "playeranimator"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "CLIENT"
 
 [[mixins]]
 config = "neko_fix.mixins.json"

@@ -15,7 +15,7 @@
 
 NeoForge 21.1.248 / Minecraft 1.21.1 的客户端+服务端修复模组。
 
-当前版本：**1.0.8**
+当前版本：**1.0.12**
 
 ## 修复内容
 
@@ -32,9 +32,13 @@ NeoForge 21.1.248 / Minecraft 1.21.1 的客户端+服务端修复模组。
 3. **toNeko NPC NekoSleepInBedGoal**
    - 已躺下后跳过重复 `startSleeping()`，避免 NPC Neko 站/躺动画反复抽搐
 
+4. **JustARod + Better Combat 第一人称腿显示**
+   - PlayerAnimator 本来会在第一人称 `THIRD_PERSON_MODEL` 渲染前隐藏除手臂外的骨骼，但 JustARod 在 `PlayerModel.setupAnim` 的 TAIL 会把腿/裤腿重新设为可见
+   - 1.0.12 在 `LivingEntityRenderer.render` 调用 `renderToBuffer` 之前再次隐藏本地玩家的腿/裤腿，保留 Better Combat 第一人称手臂动画
+
 ## 安装
 
-把 `build/libs/Neko_Fix-1.0.8.jar` 放到：
+把 `build/libs/Neko_Fix-1.0.12.jar` 放到：
 
 - 客户端：`.minecraft/versions/<版本>/mods/`
 - 服务端：`<服务端>/mods/`

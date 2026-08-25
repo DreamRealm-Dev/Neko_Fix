@@ -7,6 +7,8 @@
     "JustARodJRSyncScreenMixin",
     "JustARodFrictionScreenMixin",
     "JustARodMateScreenMixin",
+    "JustARodFirstPersonLegFixMixin",
+    "JustARodFirstPersonLegRenderFixMixin",
     "ClientPoseSleepGuardMixin",
     "VanillaBlurBlockScreenMixin",
     "VanillaBlurBlockGameRendererMixin",
