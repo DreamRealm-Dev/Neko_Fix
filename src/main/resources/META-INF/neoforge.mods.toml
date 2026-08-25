@@ -5,7 +5,7 @@ issueTrackerURL = "https://example.invalid/neko_fix"
 
 [[mods]]
 modId = "neko_fix"
-version = "1.0.12"
+version = "1.0.13"
 displayName = "Neko Fix"
 authors = "Neko_Fix"
 description = '''
@@ -47,6 +47,13 @@ type = "optional"
 versionRange = "*"
 ordering = "AFTER"
 side = "CLIENT"
+
+[[dependencies.neko_fix]]
+modId = "curios"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
 
 [[mixins]]
 config = "neko_fix.mixins.json"

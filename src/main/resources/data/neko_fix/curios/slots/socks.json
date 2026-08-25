@@ -1,0 +1,6 @@
+{
+  "size": 1,
+  "icon": "toneko:gui/slots/socks",
+  "order": 510,
+  "validators": ["curios:tag"]
+}

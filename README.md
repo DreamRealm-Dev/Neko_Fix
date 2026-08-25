@@ -15,7 +15,7 @@
 
 NeoForge 21.1.248 / Minecraft 1.21.1 的客户端+服务端修复模组。
 
-当前版本：**1.0.12**
+当前版本：**1.0.13**
 
 ## 修复内容
 
@@ -36,9 +36,14 @@ NeoForge 21.1.248 / Minecraft 1.21.1 的客户端+服务端修复模组。
    - PlayerAnimator 本来会在第一人称 `THIRD_PERSON_MODEL` 渲染前隐藏除手臂外的骨骼，但 JustARod 在 `PlayerModel.setupAnim` 的 TAIL 会把腿/裤腿重新设为可见
    - 1.0.12 在 `LivingEntityRenderer.render` 调用 `renderToBuffer` 之前再次隐藏本地玩家的腿/裤腿，保留 Better Combat 第一人称手臂动画
 
+5. **toNeko 饰品槽 Trinkets → Curios API 适配**
+   - toNeko 原版为 Trinkets 提供了 `head/hat`、`chest/back`、`feet/shoes`、`legs/socks` 槽位数据，但 NeoForge 没有 Trinkets
+   - 1.0.13 将这些槽位映射到 Curios API：`head`、`back`、`shoes`、`socks`
+   - 对应 toNeko 物品已加入 Curios 标签：`neko_ears`、`neko_tail`、`neko_paws`、腿袜系列
+
 ## 安装
 
-把 `build/libs/Neko_Fix-1.0.12.jar` 放到：
+把 `build/libs/Neko_Fix-1.0.13.jar` 放到：
 
 - 客户端：`.minecraft/versions/<版本>/mods/`
 - 服务端：`<服务端>/mods/`
